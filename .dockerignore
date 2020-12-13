@@ -1,0 +1,8 @@
+.env
+*.egg-info/
+*.pyc
+bin/
+static/
+README.md
+plsmeme.toml
+.gitignore

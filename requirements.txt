@@ -1,0 +1,4 @@
+praw==7.1.0
+python-dotenv==0.15.0
+requests==2.25.0 # praw depends on requests, there is a transitive dependency
+toml==0.10.2

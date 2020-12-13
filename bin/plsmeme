@@ -1,0 +1,14 @@
+#!/bin/bash
+
+PLSMEME_ENV_FILE=$HOME/.plsmeme.env
+
+if [ -f "$HOME/.plsmeme.toml" ]; then
+docker run \
+    -v $HOME/.plsmeme.env:/plsmeme/.env:ro \
+    -v $HOME/.plsmeme.toml:/plsmeme/config/.plsmeme.toml \
+    -t plsmeme:latest "$@"
+else
+docker run \
+    -v $HOME/.plsmeme.env:/plsmeme/.env:ro \
+    -t plsmeme:latest "$@"
+fi

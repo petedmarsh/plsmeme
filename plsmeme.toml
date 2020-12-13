@@ -1,0 +1,17 @@
+# This is the default configuration loaded into the container and read by
+# plsmeme.
+
+
+# This is the list of subreddits used by default
+subreddits = [
+  "catpictures",
+  "dogpictures",
+]
+
+# Here you can specify groups of subreddits, you can use any key name you wish
+# which is then useable with `-g` e.g. `-g sfw`
+[subreddit_groups]
+sfw = [
+  "catpictures",
+  "dogpictures",
+]

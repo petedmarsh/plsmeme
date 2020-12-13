@@ -1,0 +1,2 @@
+#!/bin/bash
+plsmeme -a | git commit -F -
